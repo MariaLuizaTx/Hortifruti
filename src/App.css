@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  height: 120vh;
+  background-color: #f66000;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1{
+  height: 17vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
   color: white;
+  font-size: 4.5em;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.subtitulo{
+  height: 7vh;
+  width: 27vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apresentacao{
+  height: 18vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 2.75em;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+
+}
+
+div .produtos{
+  height: 58vh;
+  width: 65vw;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+
+  
+}
+
+div .produtos .produtosImg{
+  height: 28vh;
+  width: 14vw;
+
+} 
+
+.carrinhoCompras{
+  height: 70vh;
+  width: 20vw;
+  background-color: #F7E0CE;
+  border-radius: 80px;
+  position: absolute;
+  left: 156vh;
+  top:36vh;
+  
+}
+
+.carrinhoCompleto{
+  height: 42vh;
+  width: 16vw;
+  position: absolute;
+  left: 4.3vh;
+  top: 8vh;
+  background-color: #D3C5BB;
+  border-radius: 40px;
+}
+
+.parteUm{
+  height: 7.5vh;
+  position: absolute;
+  left: 12vh;
+  top: 10vh;
+}
+
+.parteDois{
+  height: 3.8vh;
+  position: absolute;
+  left: 13.5vh;
+  top: 11.8vh;
+}
+
+.parteTres{
+  height: 1.8vh;
+  position: absolute;
+  left: 14.2vh;
+  top: 17.1vh;
+}
+
+.parteQuatro{
+  height: 1.8vh;
+  position: absolute;
+  left: 19vh;
+  top: 17.1vh;
+}
+
+.carrinhoCompras p{
+  width: 12vw;
+  position: absolute;
+  left: 4vh;
+  top: 24vh;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.containerInterior{
+  height: 7vh;
+  width: 10vw;
+  background-color: #D3C5BB;
+  border-radius: 50px;
+  position: absolute;
+  left: 12vh;
+  top: 58vh;
+}
+
+.containerInterior .buttonAdd{
+  background-color: #D3C5BB;
+  position: absolute;
+  left: 3.52vh;
+  top: 1.5vh;
+  font-size: 22px;
+}
+
+.containerInterior .circuloAdd{
+  z-index: 1;
+  position: absolute;
+  left: 3vh;
+  top: 2vh;
+  
+}
+
+.containerInterior .buttonMenos{
+  background-color: #D3C5BB;
+  position: absolute;
+  left: 16.5vh;
+  top: 1vh;
+  font-size: 23px;
+}
+
+.containerInterior .circuloMenos{
+  z-index: 1;
+  position: absolute;
+  left: 15.5vh;
+  top: 2vh;
 }
